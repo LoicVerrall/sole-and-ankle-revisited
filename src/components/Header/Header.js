@@ -37,7 +37,7 @@ const Header = () => {
           <MobileNavButton>
             <Icon id='search' />
           </MobileNavButton>
-          <MobileNavButton>
+          <MobileNavButton onClick={() => setShowMobileMenu(true)}>
             <Icon id='menu' />
           </MobileNavButton>
         </MobileButtons>
@@ -89,6 +89,11 @@ const MobileButtons = styled.div`
   display: none;
   flex: 1;
   justify-content: flex-end;
+  cursor: pointer;
+
+  &>* {
+    cursor: pointer;
+  }
 
   @media ${QUERIES.tabletAndBelow} {
     display: flex;
