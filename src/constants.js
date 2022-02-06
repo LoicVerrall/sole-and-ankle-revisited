@@ -22,3 +22,9 @@ export const BREAKPOINTS = {
   tabletMax: '59.375rem',
   laptopMax: '81.25rem',
 };
+
+export const QUERIES = {
+  'mobileAndBelow': `(max-width: ${BREAKPOINTS.mobileMax})`,
+  'tabletAndBelow': `(max-width: ${BREAKPOINTS.tabletMax})`,
+  'laptopAndBelow': `(max-width: ${BREAKPOINTS.laptopMax})`,
+};
