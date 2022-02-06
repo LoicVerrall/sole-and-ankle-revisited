@@ -16,3 +16,9 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const BREAKPOINTS = {
+  mobileMax: '37.5rem',
+  tabletMax: '59.375rem',
+  laptopMax: '81.25rem',
+};
