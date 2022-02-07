@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components/macro';
+import { COLORS } from '../../constants';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -64,6 +65,7 @@ table {
     float above the app.
   */
   isolation: isolate;
+  --color-gray-300: ${COLORS.gray[300]};
 }
 
 html {
