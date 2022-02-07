@@ -63,6 +63,8 @@ const Nav = styled.nav`
   display: flex;
   gap: 48px;
   margin: 0px 48px;
+  overflow: auto;
+  flex-grow: 1;
 
   @media ${QUERIES.tabletAndBelow} {
     display: none;
@@ -79,6 +81,11 @@ const NavLink = styled.a`
   text-decoration: none;
   color: ${COLORS.gray[900]};
   font-weight: ${WEIGHTS.medium};
+  margin: 0 clamp(
+    0rem,
+    5vw - 4rem,
+    5rem
+  );
 
   &:first-of-type {
     color: ${COLORS.secondary};
